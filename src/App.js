@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import Drawer from "./components/Drawer";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [dark, setDark] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className={`h-full w-full flex items-center justify-center flex-col ${
+        dark && "dark"
+      } `}
+    >
+      <Navbar
+        dark={dark}
+        setDark={setDark}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
+      <Drawer
+        dark={dark}
+        setDark={setDark}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
+      <Home />
     </div>
   );
 }
