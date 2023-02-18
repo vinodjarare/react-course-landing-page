@@ -13,14 +13,13 @@ const Hero = () => {
             />
           </div>
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-4xl font-bold leading-none sm:text-5xl w-4/5 mx-auto lg:w-full">
-              Lorem Ipsum
-              <span className="text-yellow-500">senectus</span>dolar life.
+            <h1 className="text-4xl font-bold leading-none sm:text-5xl sm:w-1/5 md:w-4/5 mx-auto lg:w-full">
+              <span className="text-yellow-500">Start </span>Now!
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">
-              Dictum aliquam porta in condimentum ac integer
+              Learn how to build websites & apps,
               <br className="hidden md:inline lg:hidden" />
-              turpis pulvinar, est scelerisque ligula sem
+              write code or start a business.
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <motion.button
